@@ -2,8 +2,7 @@
 schema_version: 1
 
 context:
-  version: "2.2.46"
-  python_min: "3.11"
+  version: "2.2.47"
 
 package:
   name: opik
@@ -11,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/o/opik/opik-${{ version }}.tar.gz
-  sha256: 76cd6425da54ac1437e805f8f17a38e0f37497331aab2c0eaaff39ae4ef72583
+  sha256: a4aeb241a44ebf41f321407f40cb40377e5734402471cabe7d10d8cd2e79b25c
   patches:
     # opik's PyPI sdist is the comet-ml/opik monorepo sub-SDK; its setup.py reads
     # ../../README.md (absent from the sdist). Patch long_description="" so
